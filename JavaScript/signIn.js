@@ -15,11 +15,15 @@ function signFn(){
             count++;
             break;
         }
+        else if (registeredUsers[i].email != email || registeredUsers[i].password != password){
+            alert("Enter valid Email or password");
+            break;
+        }
     }
-    if(count == 0){
-        alert("Enter valid email or password")
-    }
-    else{
-        alert("Login Success")
-    }
+    // if(count == 0){
+    //     alert("Enter valid email or password")
+    // }
+    // else{
+    //     alert("Login Success")
+    // }
 }
