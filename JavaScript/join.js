@@ -19,4 +19,5 @@ function formFn(){
     }
     userCreds.push(userData)
     localStorage.setItem("userCreds", JSON.stringify(userCreds))
+    window.location.href="signIn.html"
 }

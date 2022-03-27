@@ -155,3 +155,11 @@ form #email,#fName,#lName,#password{
     color: white;
     background-color:#2d2d2d ;
 }
+#signIn:hover{
+    cursor: pointer;
+    color: green;
+}
+#join:hover{
+    cursor: pointer;
+    color: green;
+}
