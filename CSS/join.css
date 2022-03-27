@@ -14,8 +14,8 @@ body{
 #container{
     width: 50%;
     margin: auto;
-    border: 1px solid black;
-    padding: 30px;
+    border: 0px solid black;
+    padding: 30px 30px 0px 30px;
     box-sizing: border-box;
     background-color: #ffffff;
 }
@@ -23,7 +23,7 @@ body{
     display: flex;
 }
 .join > div{
-    border: 1px solid red;
+    border: 0px solid red;
     width: 50%;
     font-family: sans-serif;
     font-weight: 700;
@@ -74,9 +74,9 @@ body{
     padding: 40px ;
 }
 #formContainer{
-    border: 1px solid;
+    border: 0px solid;
     width: 70%;
-    margin: auto;
+    margin: 0px auto;
 }
 form{
     font-family: futura-pt, Tahoma, Geneva, Verdana, Arial, sans-serif;;
@@ -122,4 +122,36 @@ form #email,#fName,#lName,#password{
     margin-left: 20px;
     padding: 10px;
     font-size: 16px;
+}
+.radioSelect{
+    margin-bottom: -10px;
+    margin-top: 30px;
+}
+.radioBtn{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #999;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+.womenName{
+    font-weight: lighter;
+    color: black;
+    margin-right: 50px;
+}
+#submitBtn{
+    width: 100%;
+    margin: 40px 0px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 45px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    border: 0;
+    color: white;
+    background-color:#2d2d2d ;
 }
