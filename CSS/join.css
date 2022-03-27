@@ -88,7 +88,7 @@ form #email,#fName,#lName,#password{
     height: 40px;
     margin-top: 10px;
 }
-#belowEmail,#belowPass{
+#belowEmail,#belowPass,#belowDate{
     font-weight: lighter;
     font-size: 14px;
     line-height: 1.7;
@@ -103,5 +103,23 @@ form #email,#fName,#lName,#password{
 }
 #birthdayInForm{
     display: flex;
-    border: 1px solid black;
+    border: 0px solid black;
+    margin-top: 10px;
+}
+#date{
+    height: 50px;
+    width: 70px;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+#month{
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+#year{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 16px;
 }
