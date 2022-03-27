@@ -1,0 +1,39 @@
+body{
+    background-color:whitesmoke;
+}
+#asos{
+    border: 0px solid black;
+    height: 28px;
+    width: 93px;
+    margin: 80px auto 30px;
+}
+#asos>img{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.join{
+    display: flex;
+}
+.join > div{
+    border: 1px solid red;
+    width: 50%;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #767676;
+    text-align: center;
+    padding: 20px 0px 17px;
+    font-size: 18px;
+}
+#base{
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 0px;
+}
