@@ -1,5 +1,8 @@
 body{
     font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 /* NAVBAR 1 SECTION CSS */
 #navbar1{
@@ -100,7 +103,7 @@ body{
     color: white;
 }
 #promo{
-    border: 1px solid white;
+    border: 1px solid bisque;
     background: #1E9600;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -114,4 +117,47 @@ body{
 }
 #promo>p{
     font-size: 13px;
+}
+.hero-image{
+    position: relative;
+    height: 600px;
+    width: 1260px;
+    overflow: hidden;
+    background: url(/Images/threeMen.jpg) no-repeat center;
+    background-size: cover;
+    margin: 70px auto 0px;
+}
+.container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    font-weight: 700;
+    font-size: 26px;
+    padding: 0px;
+}
+.container h1{
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+.container2{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    color: black;
+    padding: 10px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background: white;
+    transition: 0.4s all;
+}
+.btn:hover{
+    color: white;
+    background: black;
 }
