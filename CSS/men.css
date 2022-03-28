@@ -198,7 +198,7 @@ body{
     padding-bottom: 10px;
 }
 #twoImages{
-    border: 1px solid black;
+    border: 0px solid black;
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -209,9 +209,22 @@ body{
     width: 100%;
 }
 #twoImages>div{
-    border: 1px solid black;
+    border: 0px solid black;
     text-align: center;
 }
 #twoImages>div>p{
     font-size: 18px;
+}
+#imgBtn{
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 12px 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+#imgBtn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s linear;
+
 }
