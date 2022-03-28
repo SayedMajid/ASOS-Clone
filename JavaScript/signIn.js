@@ -11,7 +11,7 @@ function signFn(){
     var count = 0
     for(var i=0; i<registeredUsers.length; i++){
         if(registeredUsers[i].email == email && registeredUsers[i].password == password){
-            window.location.href= "home.html";
+            window.location.href= "men.html";
             count++;
             break;
         }
