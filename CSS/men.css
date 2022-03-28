@@ -74,3 +74,28 @@ body{
 #navbar3>div{
     border: 1px solid red;
 }
+#navbar3>div>p{
+    margin-top: 0px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 40%;
+}
+#navbar3>div>p:nth-child(2){
+    margin-top: -14px;
+}
+#navbar3>div>p:nth-child(3){
+    margin-top: -12px;
+    margin-bottom: 0px;
+}
+#navbar3>div:last-child{
+    text-align:center;
+    background-color: black;
+}
+#navbar3>div:first-child{
+    text-align:center;
+    background-color: #ff385c;
+}
+#navbar3>div>h4{
+    margin-right: 40%;
+    color: white;
+}
