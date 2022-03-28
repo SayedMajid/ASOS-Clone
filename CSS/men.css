@@ -69,10 +69,10 @@ body{
 #navbar3{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border: 1px solid black;
+    border: 0px solid black;
 }
 #navbar3>div{
-    border: 1px solid red;
+    border: 0px solid red;
 }
 #navbar3>div>p{
     margin-top: 0px;
@@ -98,4 +98,20 @@ body{
 #navbar3>div>h4{
     margin-right: 40%;
     color: white;
+}
+#promo{
+    border: 1px solid white;
+    background: #1E9600;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+#promo>h1:nth-child(2){
+    margin-top: -20px;
+}
+#promo>h3{
+    margin-top: -10px;
+}
+#promo>p{
+    font-size: 13px;
 }
