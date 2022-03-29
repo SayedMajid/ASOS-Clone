@@ -301,8 +301,9 @@ body{
 }
 #footerBox > div> h4{
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
 }
 #footerBox > div > p{
     font-size: 14px;

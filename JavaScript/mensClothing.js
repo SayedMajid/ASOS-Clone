@@ -93,3 +93,15 @@ function addToBag(elem){
     bagData.push(elem)
     localStorage.setItem("bagData", JSON.stringify(bagData))
 }
+
+document.querySelector("#homePage").addEventListener("click", homeFn)
+function homeFn(){
+    event.preventDefault()
+    window.location.href = "men.html"
+}
+
+document.querySelector(".icon3").addEventListener("click", bagFn)
+function bagFn(){
+    event.preventDefault()
+    window.location.href = "bag.html"
+}
