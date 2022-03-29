@@ -228,3 +228,46 @@ body{
     transition: 0.2s linear;
 
 }
+#trend{
+    text-align: center;
+    margin-top: 50px;
+}
+#trendingBrands{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    border: 0px solid;
+    padding: 0px 15%;
+}
+#trendingBrands > div{
+    border: 0px solid red;
+}
+#trendingBrands > div > img{
+    width: 100%;
+}
+#sAndp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 1px solid black;
+    padding: 5px 30%;
+}
+#sAndp > div{
+    border: 1px solid gray;
+}
+#sAndp > .socials, .payments{
+    display: flex;
+    justify-content: space-evenly;
+}
+#sAndp > .socials > div{
+    height: 40px;
+    width: 40px;
+    border: 1px solid blue;
+}
+#sAndp > .socials > div > img{
+    width: 100%;
+    height: 100%;
+}
+#sAndp > .payments > div{
+    height: 40px;
+    width: 60px;
+    border: 1px solid red;
+}
