@@ -61,6 +61,8 @@ var mensData = [
     }
 ]
 
+var bagData = JSON.parse(localStorage.getItem("bagData"))||[];
+
 mensData.map(function(elem,index,arr){
     var box = document.createElement("div")
     box.setAttribute("class","prodBox")
@@ -79,7 +81,15 @@ mensData.map(function(elem,index,arr){
     var btn = document.createElement("button")
     btn.textContent = "ADD TO BAG"
     btn.setAttribute("class", "bagBtn")
+    btn.addEventListener("click", function(){
+        addToBag(elem);
+    })
 
     box.append(img,prodName,price,btn)
     document.querySelector("#container").append(box)
 });
+
+function addToBag(elem){
+    bagData.push(elem)
+    localStorage.setItem("bagData", JSON.stringify(bagData))
+}
