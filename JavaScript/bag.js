@@ -50,4 +50,9 @@ var totalPrice = bagItems.reduce(function(sum,elem,index,arr){
     return sum + Number(elem.price);
 }, 0)
 
-document.querySelector("#displayPrice").textContent = totalPrice
+document.querySelector("#displayPrice").textContent = totalPrice;
+document.querySelector("#cbPrice").textContent = totalPrice;
+document.querySelector("#homePage").addEventListener("click", homeFn)
+function homeFn(){
+    window.location.href = "men.html"
+}

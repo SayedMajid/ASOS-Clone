@@ -112,8 +112,8 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 70%;
-    border: 1px solid black;
-    margin: 10px auto 10px;
+    border: 0px solid black;
+    margin: 10px auto 40px;
     justify-content: center;
     align-content: center;
     column-gap: 10px;
@@ -145,7 +145,7 @@ body{
 }
 #mainBox{
     display: flex;
-    border: 1px solid crimson;
+    border: 0px solid crimson;
     border-radius: 10px;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     background-color: white;
@@ -192,4 +192,140 @@ body{
 #subTotal > i{
     margin-top: 16px;
     margin-right: -14px;
+}
+/* checkout box css */
+#checkoutBox{
+    border: 0px solid red;
+    padding: 10px 26px;
+    height: 300px;
+    width: 50%;
+    background-color: white;
+}
+#checkoutBox > h3{
+    padding-bottom: 5%;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0px;
+    letter-spacing: 1.5px;
+}
+#cbSubtotal{
+    display: flex;
+    justify-content: space-between;
+}
+#cbSubtotal > i{
+    margin-top: 21px;
+    margin-left: 67%;
+}
+#delivery{
+    width: 100%;
+    height: 40px;
+    color: gray;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 5%;
+}
+#checkoutBtn{
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    padding: 15px;
+    font-weight: 600;
+    background-color: #018849;
+    color: white;
+    letter-spacing: 1.5px;
+}
+#paymentBox{
+    border: 0px solid crimson;
+    margin-top: -10px;
+    display: flex;
+}
+#paymentBox > div{
+border: 0px solid green;
+height: 24px;
+width: 40px;
+margin-right: 8px;
+}
+#paymentBox > div > img{
+    height: 100%;
+    width: 100%;
+}
+/* SOCIALS CSS */
+#sAndp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5px 30%;
+}
+#sAndp > div{
+    border: 0px solid gray;
+}
+#sAndp > .socials{
+    border-right: 1px solid gray;
+}
+#sAndp > .socials, .payments{
+    display: flex;
+    justify-content: space-evenly;
+}
+#sAndp > .socials > div{
+    height: 30px;
+    width: 30px;
+    border: 0px solid blue;
+}
+#sAndp > .socials > div > img{
+    width: 100%;
+    height: 100%;
+}
+#sAndp > .payments > div > img{
+    width: 100%;
+    height: 100%;
+}
+#sAndp > .payments > div{
+    height: 30px;
+    width: 50px;
+    border: 0px solid red;
+}
+#sAndp > .payments{
+    width: 450px;
+}
+/* FOOTER SECTION CSS */
+#footer{
+    border: 0px solid black;
+    margin-top: 10px;
+    background-color: #eeeeee;
+    padding: 20px 0px;
+}
+#footerBox{
+    border: 0px solid gray;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0px 16%;
+    background-color: #eeeeee;
+}
+#footerBox > div{
+    border: 0px solid red;
+}
+#footerBox > div> h4{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+}
+#footerBox > div > p{
+    font-size: 14px;
+    color: #999;
+}
+#footerBtn{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #999;
+}
+#footerBtn > img{
+    height: 20px;
+    width: 20px;
 }
