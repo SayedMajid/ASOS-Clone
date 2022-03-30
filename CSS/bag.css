@@ -112,7 +112,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 70%;
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 10px auto 10px;
     justify-content: center;
     align-content: center;
@@ -122,28 +122,50 @@ body{
 #bagBox{
     display: grid;
     grid-template-rows: auto;
-    border: 1px solid red;
-   
+    border: 0px solid red;
+    row-gap: 10px;
 }
 #bagBox > div:first-child{
-    border: 1px solid gold;
-    font-size: 18px;
+    border: 0px solid gold;
+    font-size: 20px;
+    letter-spacing: 1.5px;
     font-weight: 700;
     font-family:'Hind Siliguri', sans-serif;
     padding: 20px 26px;
+    background-color: white;
 }
-#checkoutBox{
-    border: 1px solid green;
-   
+#bagBox > div:last-child{
+    background-color: white;
 }
-#subTotal{
+#bagProducts{
+    border: 0px dashed darkgreen;
     display: flex;
-    justify-content: flex-end;
-    border: 1px solid blue;
-   padding: 7px;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 700;
+    flex-direction: column;
+    row-gap: 20px;
 }
-#subTotal > p:last-child{
-    margin-left: 20px;
+#mainBox{
+    display: flex;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mainBox > div:last-child{
+    margin-left: 4%;
+}
+.prodPrice{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.prodImage{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#imgBox{
+    height: 160px;
+    width: 140px;
+}
+#imgBox > img{
+    height: 100%;
+    width: 100%;
 }
