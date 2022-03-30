@@ -56,3 +56,8 @@ document.querySelector("#homePage").addEventListener("click", homeFn)
 function homeFn(){
     window.location.href = "men.html"
 }
+
+document.querySelector("#checkoutBtn").addEventListener("click", checkout)
+function checkout(){
+    window.location.href = "checkout.html"
+}
