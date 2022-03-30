@@ -112,7 +112,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 70%;
-    border: 0px solid black;
+    border: 1px solid black;
     margin: 10px auto 10px;
     justify-content: center;
     align-content: center;
@@ -147,7 +147,8 @@ body{
     display: flex;
     border: 1px solid crimson;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: white;
 }
 #mainBox > div:last-child{
     margin-left: 4%;
@@ -156,6 +157,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     font-family: 'Hind Siliguri', sans-serif;
+    margin-top: 4px;
 }
 .prodImage{
     border-bottom-left-radius: 10px;
@@ -168,4 +170,26 @@ body{
 #imgBox > img{
     height: 100%;
     width: 100%;
+}
+.removeBtn{
+    border: 0px;
+    padding: 10px 40px;
+    background-color: #ff385c;
+}
+#subTotal{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+#subTotal >p:first-child{
+    margin-right: 20px;
+}
+#subTotal > p:last-child{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#subTotal > i{
+    margin-top: 16px;
+    margin-right: -14px;
 }
