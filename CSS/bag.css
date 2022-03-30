@@ -107,3 +107,43 @@ body{
     margin-right: 40%;
     color: white;
 }
+/* MAIX BOX OF PRODUCTS AND CHECKOUT BOX CSS */
+#container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+    border: 1px solid black;
+    margin: 10px auto 10px;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    padding: 7px;
+}
+#bagBox{
+    display: grid;
+    grid-template-rows: auto;
+    border: 1px solid red;
+   
+}
+#bagBox > div:first-child{
+    border: 1px solid gold;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:'Hind Siliguri', sans-serif;
+    padding: 20px 26px;
+}
+#checkoutBox{
+    border: 1px solid green;
+   
+}
+#subTotal{
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid blue;
+   padding: 7px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+}
+#subTotal > p:last-child{
+    margin-left: 20px;
+}
