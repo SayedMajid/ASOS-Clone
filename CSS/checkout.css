@@ -6,14 +6,14 @@ body{
 }
 #header{
     width: 50%;
-    border: 1px solid rebeccapurple;
+    border: 0px solid rebeccapurple;
     padding: 0px 30px;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 #header > div{
-    border: 1px solid purple;
+    border: 0px solid purple;
 }
 #header > div:first-child{
     font-size: 40px;
@@ -34,13 +34,13 @@ body{
 #container{
     display: flex;
     column-gap: 10px;
-    border: 1px solid black;
+    border: 0px solid black;
     width: 50%;
     margin: auto;
     padding: 10px 30px;
 }
 #container > div{
-    border: 1px solid blue;
+    border: 0px solid blue;
 }
 #container > div:first-child{
     width: 60%;
@@ -50,25 +50,99 @@ body{
 }
 #itemBox > div:first-child{
     display: flex;
-    border-bottom: 1px solid gray;
-}
-#infoBox{
-    padding: 10px;
+    border-bottom: 0px solid gray;
 }
 #promo{
-    border: 1px solid red;
+    border: 0px solid red;
     margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+}
+#promo > p{
+    margin-top: 0px;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+#promoCode{
+    height: 32px;
+    width: 60%;
+    border: 1px solid gray;
+}
+#applyCode{
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: 0;
+    padding: 9px;
+    width: 30%;
 }
 ul{
     margin-left: -16px;
+    color: black;
 }
+
 #delivery{
-    border: 1px solid red;
+    border: 0px solid red;
     margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+}
+#delivery > h4{
+    margin-top: 0px;
+    font-size: 20px;
+}
+#addForm{
+    font-size: 16px;
+    font-weight: 900;
+    color:gray;
+}
+#addForm > #fName, #lName,#mobile,#address,#city,#country,#postcode{
+    height: 30px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    border: 1px solid gray;
+}
+#deliveryBtn{
+    height: 33px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: white;
 }
 #payment{
     border: 1px solid red;
+    background-color: white;
+    padding: 10px;
 }
+#payment > h4{
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#payment > p{
+    font-size: 16px;
+    color: black;
+    margin-top: 0;
+}
+#paymentData > #cardNumber, #expiryDate, #cardName, #cvvNumber{
+    height: 33px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    border: 1px solid gray;
+}
+#paymentBtn{
+    height: 33px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: white;
+}
+/* SECOND BOX CSS */
 #itemList{
     border: 0px dashed darkgreen;
     display: flex;
