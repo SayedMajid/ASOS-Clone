@@ -23,8 +23,8 @@
         <div id="infoBox">
             <div id="promo">
                 <p>PROMO/STUDENT CODE OR VOUCHERS:</p>
-                <input type="number" name="promoCode" id="promoCode">
-                <button>APPLY CODE</button><br>
+                <input type="text" name="promoCode" id="promoCode">
+                <button id="applyCode">APPLY CODE</button><br>
                 <h4>NEED TO KNOW</h4>
                 <ul>
                     <li>You can only use one discount/promo code per order.This applies to our free-delivery codes, too.</li>
@@ -67,7 +67,7 @@
                     <label for="">CVV</label><br>
                     <input type="number" name="" id="cvv"><br>
                     <!-- submit button -->
-                    <input type="submit" value="USE THIS CARD">
+                    <input type="submit" value="PLACE ORDER">
                 </form>
             </div>
         </div>
@@ -77,6 +77,10 @@
                 <h2>ITEM</h2>
             </div>
             <div id="itemList"></div>
+            <div id="subTotal">
+                <p>SUBTOTAL</p>
+                <p class="displayPrice">Price</p>
+            </div>
         </div>
     </div>
 </body>

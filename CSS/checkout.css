@@ -69,3 +69,44 @@ ul{
 #payment{
     border: 1px solid red;
 }
+#itemList{
+    border: 0px dashed darkgreen;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-bottom: 1px solid gray;
+}
+#mainBox{
+    display: flex;
+    border: 0px solid crimson;
+    /* border-radius: 10px; */
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: white;
+    margin-bottom: 7px;
+}
+#mainBox > div:last-child{
+    margin-left: 4%;
+}
+.prodPrice{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin-top: 4px;
+}
+.prodName{
+    font-size: 12px;
+}
+#imgBox{
+    height: 110px;
+    width: 150px;
+}
+#imgBox > img{
+    height: 100%;
+    width: 100%;
+}
+#subTotal{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
