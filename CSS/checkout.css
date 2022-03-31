@@ -113,7 +113,7 @@ ul{
     color: white;
 }
 #payment{
-    border: 1px solid red;
+    border: 0px solid red;
     background-color: white;
     padding: 10px;
 }
@@ -143,6 +143,17 @@ ul{
     color: white;
 }
 /* SECOND BOX CSS */
+#itemBox{
+    padding: 10px;
+    background-color: white ;
+}
+#itemBox > div > h2{
+    margin-top: 0;
+    margin-right: 20px;
+}
+#ibHeader{
+    display: flex;
+}
 #itemList{
     border: 0px dashed darkgreen;
     display: flex;

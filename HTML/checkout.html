@@ -37,7 +37,7 @@
                 <h4>DELIVERY ADDRESS</h4>
                 <form action="" id="addForm">
                     <label for="" id="first">FIRST NAME</label><br>
-                    <input type="text" name="" id="fName"><br>
+                    <input type="text" name="" id="fName"><br> 
                     <label for="" id="last">LAST NAME</label><br>
                     <input type="text" name="" id="lName"><br>
                     <label for="" id="mob">MOBILE (For delivery updates):</label><br>
@@ -57,24 +57,24 @@
             <div id="payment">
                 <h4>PAYMENT TYPE</h4>
                 <p>CREDIT/DEBIT CARD</p>
-                <form action="" id="paymentData">
+                <form id="paymentData">
                     <label for="" id="card">CARD NUMBER</label><br>
-                    <input type="number" name="" id="cardNumber"><br>
+                    <input type="number" name="" id="cardNumber" required><br>
                     <label for="" id="exp">EXPIRY DATE</label><br>
-                    <input type="number" name="" id="expiryDate" placeholder="mm/yy"><br>
+                    <input type="number" name="" id="expiryDate" placeholder="mm/yy" required><br>
                     <label for="" id="cardN">NAME ON CARD</label><br>
-                    <input type="text" name="" id="cardName"><br>
+                    <input type="text" name="" id="cardName" required><br>
                     <label for="" id="cvv">CVV</label><br>
-                    <input type="number" name="" id="cvvNumber"><br>
+                    <input type="number" name="" id="cvvNumber" required><br>
                     <!-- submit button -->
                     <input type="submit" value="PLACE ORDER" id="paymentBtn">
                 </form>
             </div>
         </div>
         <div id="itemBox">
-            <div>
+            <div id="ibHeader">
                 <h2 id="displayItem"></h2>
-                <h2>ITEM</h2>
+                <h2>ITEMS</h2>
             </div>
             <div id="itemList"></div>
             <div id="subTotal">

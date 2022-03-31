@@ -11,7 +11,7 @@ var length = JSON.parse(localStorage.getItem("length"))
 document.querySelector("#displayItem").textContent = length
 
 var bagItems = JSON.parse(localStorage.getItem("bagData"))
-console.log(bagItems)
+// console.log(bagItems)
 
 bagItems.map(function (elem){
     var mainBox = document.createElement("div")
@@ -57,3 +57,21 @@ function promoFn(){
     }
     document.querySelector(".displayPrice").textContent = discount;
 }
+
+document.querySelector("#addForm").addEventListener("submit", addForm)
+var userAdd = JSON.parse(localStorage.getItem("userAdd")) || [];
+function addForm(){
+    event.preventDefault()
+    var obj = {
+        first_name : document.querySelector("#fName").value,
+        last_name : document.querySelector("#lName").value,
+        mobile : document.querySelector("#mobile").value,
+        address : document.querySelector("#address").value,
+        city : document.querySelector("#city").value,
+        country : document.querySelector("#country").value,
+        post_code : document.querySelector("#postcode").value
+    }
+    userAdd.push(obj)
+    localStorage.setItem("userAdd", JSON.stringify(userAdd))
+}
+
