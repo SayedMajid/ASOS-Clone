@@ -48,7 +48,11 @@ function removeProduct(elem,index){
 
 var totalPrice = bagItems.reduce(function(sum,elem,index,arr){
     return sum + Number(elem.price);
-}, 0)
+}, 0);
+
+var length = bagItems.length;
+console.log(length)
+localStorage.setItem("length", JSON.stringify(length));
 
 document.querySelector("#displayPrice").textContent = totalPrice;
 document.querySelector("#cbPrice").textContent = totalPrice;

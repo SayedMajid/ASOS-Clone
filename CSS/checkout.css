@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
 }
 #header{
     width: 50%;
@@ -29,4 +30,42 @@ body{
     font-weight: 1000;
     font-family: 'Poppins';
     letter-spacing: 1.5px;
+}
+#container{
+    display: flex;
+    column-gap: 10px;
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    padding: 10px 30px;
+}
+#container > div{
+    border: 1px solid blue;
+}
+#container > div:first-child{
+    width: 60%;
+}
+#container > div:last-child{
+    width: 40%;
+}
+#itemBox > div:first-child{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+#infoBox{
+    padding: 10px;
+}
+#promo{
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+ul{
+    margin-left: -16px;
+}
+#delivery{
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+#payment{
+    border: 1px solid red;
 }
