@@ -120,24 +120,24 @@ var mensData = [
         price:"13.00"
     },
     {
-        imgUrl:"",
-        name:"",
-        price:""
+        imgUrl:"https://images.asos-media.com/products/nike-air-max-96-ii-trainers-in-black-and-white/200881790-1-white?$n_320w$&wid=317&fit=constrain",
+        name:"Nike Air Max 96 || trainers in black and white",
+        price:"154.95"
     },
     {
-        imgUrl:"",
-        name:"",
-        price:""
+        imgUrl:"https://images.asos-media.com/products/nike-air-max-2021-trainers/24280732-1-black?$n_320w$&wid=317&fit=constrain",
+        name:"Nike air max 2021 trainers",
+        price:"144.95"
     },
     {
-        imgUrl:"",
-        name:"",
-        price:""
+        imgUrl:"https://images.asos-media.com/products/nike-vapormax-2021-flyknit-trainers-in-triple-black/22501159-1-tripleblack?$n_320w$&wid=317&fit=constrain",
+        name:"Nike vapormax 2021 flyknit trainers in triple black",
+        price:"179.95"
     },
     {
-        imgUrl:"",
-        name:"",
-        price:""
+        imgUrl:"https://images.asos-media.com/products/nike-air-huarache-trainers-in-white/200513510-1-white?$n_320w$&wid=317&fit=constrain",
+        name:"Nike Air Huarache trainers in white",
+        price:"104.95"
     },
 ]
 
