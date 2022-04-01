@@ -58,7 +58,87 @@ var mensData = [
         imgUrl:"https://images.asos-media.com/products/asos-design-co-ord-relaxed-vest-in-all-over-blue-wave-print/202338991-1-blues?$n_960w$&wid=952&fit=constrain",
         name:"ASOS DESIGN co ord relaxed vest in all over blue wave print",
         price:"20.00"
-    }
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/asos-design-rimless-square-fashion-glasses-in-gold-with-clear-lens/201431523-1-gold?$n_320w$&wid=317&fit=constrain",
+        name:"ASOS DESIGN rimless square fashion glasses in gold with clear lens",
+        price:"12.50"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/asos-design-padded-cross-body-bag-with-smile-badge-in-grey/201109848-1-grey?$n_320w$&wid=317&fit=constrain",
+        name:"ASOS DESIGN padded cross body bag with smile badge in gray",
+        price:"19.90"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/asos-design-neckchain-with-st-chris-pendant-in-14k-gold-plate/202128152-1-gold?$n_320w$&wid=317&fit=constrain",
+        name:"ASOS DESIGN neckchain with St Chris pendant with 14k gold plate",
+        price:"40.00"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/asos-design-round-sunglasses-in-gold-recycled-metal-with-smoke-lens/201344344-1-gold?$n_320w$&wid=317&fit=constrain",
+        name:"ASOS DESIGN round sunglasses in gold recycled metal with smoke lens",
+        price:"10.00"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/the-ordinary-behentrimonium-chloride-2-conditioner-240ml/202332504-1-nocolour?$n_320w$&wid=317&fit=constrain",
+        name:"The Ordinary Behentrimonium Chloride 2% Conditioner 240ml",
+        price:"7.50"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/bondi-sands-spf-50-fragrance-free-face-mist-60g/201873103-1-nocolour?$n_320w$&wid=317&fit=constrain",
+        name:"ASOS | Bondi Sands SPF 50+ Fragrance Free Face Mist 60g",
+        price:"9.50"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/elemis-pro-collagen-night-cream-15ml/202554686-1-nocolour?$n_320w$&wid=317&fit=constrain",
+        name:"ASOS Mens | Elemis Pro-Collagen Night Cream 15ml",
+        price:"37.00"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/loreal-men-expert-magnesium-defence-hypoallergenic-48h-roll-on-deodorant-50ml/202533065-1-nocolour?$n_320w$&wid=317&fit=constrain",
+        name:"L'Oreal Men Expert Magnesium Defence Hypoallergenic 48H Roll-On Deodorant 5Oml",
+        price:"3.50"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/babylissmen-powerblade-pro-hair-clipper/21066017-1-powerbladepro?$n_320w$&wid=317&fit=constrain",
+        name:"BaBylissMEN Powerblade Pro Hair Clipper",
+        price:"32.00"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/babylissmen-clipper-gift-set/21066020-1-clippergiftset?$n_320w$&wid=317&fit=constrain",
+        name:"BaBylissMEN Clipper gift set",
+        price:"42.00"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/gillette-skinguard-sensitive-starter-pack-razor-handle-4-blades/13723011-1-nocolour?$n_320w$&wid=317&fit=constrain",
+        name:"Gillette Starter Pack Razor Handle +4 Blades",
+        price:"19.00"
+    },
+    {
+        imgUrl:"https://images.asos-media.com/products/gillette-skinguard-sensitive-razor-blades-4-pack/13723012-1-nocolour?$n_320w$&wid=317&fit=constrain",
+        name:"Gillette SkinGuard Sensitive Razor Blades - 4 Pack",
+        price:"13.00"
+    },
+    {
+        imgUrl:"",
+        name:"",
+        price:""
+    },
+    {
+        imgUrl:"",
+        name:"",
+        price:""
+    },
+    {
+        imgUrl:"",
+        name:"",
+        price:""
+    },
+    {
+        imgUrl:"",
+        name:"",
+        price:""
+    },
 ]
 
 var bagData = JSON.parse(localStorage.getItem("bagData"))||[];

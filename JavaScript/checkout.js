@@ -75,3 +75,17 @@ function addForm(){
     localStorage.setItem("userAdd", JSON.stringify(userAdd))
 }
 
+document.querySelector("#paymentBtn").addEventListener("click", thanks)
+function thanks(){
+    event.preventDefault()
+    var cardNum = document.querySelector("#cardNumber").value
+    var expDate = document.querySelector("#expiryDate").value
+    var name = document.querySelector("#cardName").value
+    var cvv = document.querySelector("#cvvNumber").value
+    if(cardNum == "" && expDate == "" && name == "" && cvv == ""){
+        alert("Enter Payment Details")
+    }
+    else{
+        window.location.href = "redirect.html"
+    }
+}
