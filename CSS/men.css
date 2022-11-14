@@ -1,328 +1,438 @@
-body{
-    font-family: sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* NAVBAR 1 SECTION CSS */
-#navbar1{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    border: 0px solid black;
-    padding: 0 15%;
-    background-color: #2d2d2d;
+#navbar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  background-color: #2d2d2d;
 }
-#navbar1 > div{
-    border: 0px solid black;
+
+.hamburgerIcon {
+  border: 1px solid white;
+  display: none;
 }
-#navbar1>div:first-child{
-    padding: 0px 20px;
-    color: white;
-    font-size: 36px;
-    font-weight: bolder;
-    font-family: "Poppins";
-    letter-spacing: -2px;
+
+#navbar1 > div:nth-child(1) > div {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-.women{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 18px;
-    color: white;
-    cursor: pointer;
+
+#navbar1 > div:nth-child(4) {
+  flex: 1;
 }
-.men{
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-    width: 80px;
-    padding: 18px;
-    color: white;
-    cursor: pointer;
+#navbar1 > div:first-child {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+  font-family: "Poppins";
+  letter-spacing: -1px;
 }
-#search{
-    width: 900px;
-    height: 40px;
-    padding: 18px;
-    margin: 10px 10px 10px 0px;
-    border-radius: 20px;
+
+#navbar1 > div:nth-child(1) > div:nth-child(2) {
+  font-size: 30px;
+  font-weight: 900;
 }
-.icons{
-    padding: 18px;
-    color: white;
+
+.women,
+.men {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
 }
+#search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+}
+#search > input {
+  border: 0px;
+  width: 100%;
+  font-size: 15px;
+  height: 40px;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+#search > div:nth-child(2) {
+  position: absolute;
+  right: 2.6%;
+  font-size: 20px;
+}
+
+.navbarIcons {
+  display: flex;
+}
+.icons {
+  padding: 18px;
+  color: white;
+}
+
 /* NAVBAR 2 SECTION CSS */
-#navbar2{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    border: 0px solid black;
-    padding-left: 14%;
-    padding-right: 14%;
-    background-color: #525050;
+#navbar2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border: 0px solid black;
+  padding-left: 14%;
+  padding-right: 14%;
+  background-color: #525050;
 }
-#navbar2>div{
-    border: 0px solid black;
-    text-align: center;
-    color: white;
-    padding: 20px 5px;
+#navbar2 > div {
+  border: 0px solid black;
+  text-align: center;
+  color: white;
+  padding: 20px 5px;
 }
-#navbar2 > div:first-child, div:nth-child(11){
-    background-color: crimson;
+#navbar2 > div:first-child,
+div:nth-child(11) {
+  background-color: crimson;
 }
 /* NAVBAR 3 SECTION CSS */
-#navbar3{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    border: 0px solid black;
+#navbar3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-#navbar3>div{
-    border: 0px solid red;
+#navbar3 > div {
+  border: 0px solid red;
 }
-#navbar3>div>p{
-    margin-top: 0px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 40%;
+#navbar3 > div > p {
+  margin-top: 0px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 40%;
 }
-#navbar3>div>p:nth-child(2){
-    margin-top: -14px;
+#navbar3 > div > p:nth-child(2) {
+  margin-top: -14px;
 }
-#navbar3>div>p:nth-child(3){
-    margin-top: -12px;
-    margin-bottom: 0px;
+#navbar3 > div > p:nth-child(3) {
+  margin-top: -12px;
+  margin-bottom: 0px;
 }
-#navbar3>div:last-child{
-    text-align:center;
-    background-color: black;
+#navbar3 > div:last-child {
+  text-align: center;
+  background-color: black;
 }
-#navbar3>div:first-child{
-    text-align:center;
-    background-color: #ff385c;
+#navbar3 > div:first-child {
+  text-align: center;
+  background-color: #ff385c;
 }
-#navbar3>div>h4{
-    margin-right: 40%;
-    color: white;
+#navbar3 > div > h4 {
+  margin-right: 40%;
+  color: white;
 }
-/* promo section */
-#promo{
-    border: 1px solid bisque;
-    background: #1E9600;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: center;
-}
-#promo>h1:nth-child(2){
-    margin-top: -20px;
-}
-#promo>h3{
-    margin-top: -10px;
-}
-#promo>p{
-    font-size: 13px;
-}
-.hero-image{
-    position: relative;
-    height: 600px;
-    width: 1260px;
-    overflow: hidden;
-    background: url(/Images/threeMen.jpg) no-repeat center;
-    background-size: cover;
-    margin: 50px auto 0px;
-}
-.container{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    font-weight: 700;
-    font-size: 28px;
-    padding: 4px 8px;
-}
-.container h1{
-    width: 400px;
-    height: 30px;
-    text-align: center;
-    margin-top: 5px;
-}
-.container2{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.btn{
-    color: black;
-    padding: 10px 24px;
-    font-size: 20px;
-    text-decoration: none;
-    background: white;
-    transition: 0.4s all;
-}
-.btn:hover{
-    color: white;
-    background: black;
-    cursor: pointer;
-}
-#fourImages{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 20px;
-    width: 1260px;
-    border: 0px solid black;
-    margin: 50px auto 0px;
-}
-#fourImages>div{
-    border: 0px solid red;
-    text-align: center;
-}
-#fourImages>div>img{
-    width: 100%;
-}
-#springStyle{
-    background-color: #9447ff;
-    text-align: center;
-    color: white;
-}
-#springStyle > h1{
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    font-style: italic;
-}
-#springStyle > h1:first-child{
-    margin-bottom: -45px;
-}
-#springStyle > h2{
-    margin-top: -30px;
-}
-#springStyle > p{
-    font-size: 12px;
-    padding-bottom: 10px;
-}
-#twoImages{
-    border: 0px solid black;
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 50px;
-    margin: 50px auto 0px;
-}
-#twoImages>div>img{
-    width: 100%;
-}
-#twoImages>div{
-    border: 0px solid black;
-    text-align: center;
-}
-#twoImages>div>p{
-    font-size: 18px;
-}
-#imgBtn{
-    font-size: 20px;
-    border: 3px solid black;
-    padding: 12px 10px;
-    background-color: white;
-    margin-bottom: 10px;
-}
-#imgBtn:hover{
-    background-color: black;
-    color: white;
-    transition: 0.2s linear;
 
+.hero-image {
+  position: relative;
+  height: 600px;
+  width: 1260px;
+  overflow: hidden;
+  background: url(/Images/threeMen.jpg) no-repeat center;
+  background-size: cover;
+  margin: 50px auto 0px;
 }
-#trend{
-    text-align: center;
-    margin-top: 50px;
+.container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 4px 8px;
 }
-#trendingBrands{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    border: 0px solid;
-    padding: 0px 15%;
+.container h1 {
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  margin-top: 5px;
 }
-#trendingBrands > div{
-    border: 0px solid red;
+.container2 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#trendingBrands > div > img{
-    width: 100%;
+.btn {
+  color: black;
+  padding: 10px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  background: white;
+  transition: 0.4s all;
 }
-#sAndp{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 5px 30%;
+.btn:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
 }
-#sAndp > div{
-    border: 0px solid gray;
+#fourImages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  width: 1260px;
+  border: 0px solid black;
+  margin: 50px auto 0px;
 }
-#sAndp > .socials{
-    border-right: 1px solid gray;
+#fourImages > div {
+  border: 0px solid red;
+  text-align: center;
 }
-#sAndp > .socials, .payments{
-    display: flex;
-    justify-content: space-evenly;
+#fourImages > div > img {
+  width: 100%;
 }
-#sAndp > .socials > div{
-    height: 30px;
-    width: 30px;
-    border: 0px solid blue;
+#springStyle {
+  background-color: #9447ff;
+  text-align: center;
+  color: white;
 }
-#sAndp > .socials > div > img{
-    width: 100%;
-    height: 100%;
+#springStyle > h1 {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-style: italic;
 }
-#sAndp > .payments > div > img{
-    width: 100%;
-    height: 100%;
+#springStyle > h1:first-child {
+  margin-bottom: -45px;
 }
-#sAndp > .payments > div{
-    height: 30px;
-    width: 50px;
-    border: 0px solid red;
+#springStyle > h2 {
+  margin-top: -30px;
 }
-#sAndp > .payments{
-    width: 450px;
+#springStyle > p {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+#twoImages {
+  border: 0px solid black;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  margin: 50px auto 0px;
+}
+#twoImages > div > img {
+  width: 100%;
+}
+#twoImages > div {
+  border: 0px solid black;
+  text-align: center;
+}
+#twoImages > div > p {
+  font-size: 18px;
+}
+#imgBtn {
+  font-size: 20px;
+  border: 3px solid black;
+  padding: 12px 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+#imgBtn:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s linear;
+}
+#trend {
+  text-align: center;
+  margin-top: 50px;
+}
+#trendingBrands {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border: 0px solid;
+  padding: 0px 15%;
+}
+#trendingBrands > div {
+  border: 0px solid red;
+}
+#trendingBrands > div > img {
+  width: 100%;
+}
+#sAndp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px 30%;
+  background-color: white;
+}
+#sAndp > div {
+  border: 0px solid gray;
+}
+#sAndp > .socials {
+  border-right: 1px solid gray;
+}
+#sAndp > .socials,
+.payments {
+  display: flex;
+  justify-content: space-evenly;
+}
+#sAndp > .socials > div {
+  height: 30px;
+  width: 30px;
+  border: 0px solid blue;
+}
+#sAndp > .socials > div > img {
+  width: 100%;
+  height: 100%;
+}
+#sAndp > .payments > div > img {
+  width: 100%;
+  height: 100%;
+}
+#sAndp > .payments > div {
+  height: 30px;
+  width: 50px;
+  border: 0px solid red;
+}
+#sAndp > .payments {
+  width: 450px;
 }
 /* FOOTER SECTION CSS */
-#footer{
-    border: 0px solid black;
-    margin-top: 10px;
-    background-color: #eeeeee;
-    padding: 20px 0px;
+#footer {
+  border: 0px solid black;
+  margin-top: 10px;
+  background-color: #eeeeee;
+  padding: 20px 0px;
 }
-#footerBox{
-    border: 0px solid gray;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin: 0px 16%;
-    background-color: #eeeeee;
+#footerBox {
+  border: 0px solid gray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0px 16%;
+  background-color: #eeeeee;
 }
-#footerBox > div{
-    border: 0px solid red;
+#footerBox > div {
+  border: 0px solid red;
 }
-#footerBox > div> h4{
-    font-size: 14px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    color: dimgray;
+#footerBox > div > h4 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: dimgray;
 }
-#footerBox > div > p{
-    font-size: 14px;
-    color: #999;
+#footerBox > div > p {
+  font-size: 14px;
+  color: #999;
 }
-#footerBtn{
-    border: none;
-    background-color: transparent;
-    outline: none;
-    padding: 0;
-    margin: 0;
-    height: 30px;
+#footerBtn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #999;
+}
+#footerBtn > img {
+  height: 20px;
+  width: 20px;
+}
+
+/* Tablet to small screens */
+
+@media screen and (max-width: 1028px) {
+  #navbar1 {
+    padding: 0 20px;
+  }
+
+  #navbar1 > div:nth-child(1) {
+    gap: 18px;
+    margin-right: 34px;
+  }
+
+  #navbar1 > div:nth-child(1) > div:nth-child(1) {
+    border: 0;
+    margin-top: 4px;
+  }
+
+  .hamburgerIcon {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .men,
+  .women {
+    display: none;
+  }
+
+  #search > input {
+    height: 32px;
+  }
+  #search > div:nth-child(2) {
+    position: absolute;
+    top: 18px;
+    right: 3%;
+    font-size: 16px;
+  }
+
+  .navbarIcons {
     display: flex;
-    align-items: center;
-    align-content: center;
-    color: #999;
+    gap: 24px;
+    margin: 0 7px 0 14px;
+    font-size: 12px;
+  }
+  .icons {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
 }
-#footerBtn > img{
+
+/* Mobile Devices CSS */
+
+@media screen and (max-width: 361px) {
+  #navbar1 {
+    margin: 0;
+    padding: 0 7px;
+  }
+
+  #navbar1 > div:nth-child(1) {
+    gap: 12px;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  #navbar1 > div:nth-child(1) > div:nth-child(2) {
+    font-size: 24px;
+  }
+
+  #search {
+    margin: 0;
+    padding: 10px 0px;
+  }
+
+  #search > input {
     height: 20px;
-    width: 20px;
+    display: none;
+  }
+
+  #search > div:nth-child(2) {
+    position: absolute;
+    top: 9%;
+    color: white;
+    right: 3%;
+    font-size: 16px;
+  }
+
+  .navbarIcons {
+    gap: 16px;
+  }
+  .navbarIcons > div:nth-child(1) {
+    display: none;
+  }
 }
