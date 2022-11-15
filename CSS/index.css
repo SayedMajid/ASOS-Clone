@@ -28,6 +28,7 @@ body {
 #navbar1 > div:nth-child(4) {
   flex: 1;
 }
+
 #navbar1 > div:first-child {
   display: flex;
   gap: 30px;
@@ -40,7 +41,8 @@ body {
 }
 
 #navbar1 > div:nth-child(1) > div:nth-child(2) {
-  font-size: 30px;
+  font-size: 34px;
+  padding-bottom: 4px;
   font-weight: 900;
 }
 
@@ -84,22 +86,24 @@ body {
 
 /* NAVBAR 2 SECTION CSS */
 #navbar2 {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 0px solid black;
-  padding-left: 14%;
-  padding-right: 14%;
+  gap: 40px;
+  padding: 0 14%;
   background-color: #525050;
 }
 #navbar2 > div {
   border: 0px solid black;
   text-align: center;
   color: white;
-  padding: 20px 5px;
 }
 #navbar2 > div:first-child,
 div:nth-child(11) {
-  background-color: crimson;
+  background-color: #d01345;
+  padding: 18px 28px;
+  clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
 }
 /* NAVBAR 3 SECTION CSS */
 #navbar3 {
@@ -113,7 +117,7 @@ div:nth-child(11) {
   margin-top: 0px;
   font-weight: bold;
   text-align: center;
-  margin-left: 40%;
+  margin-left: 0;
 }
 #navbar3 > div > p:nth-child(2) {
   margin-top: -14px;
@@ -131,7 +135,7 @@ div:nth-child(11) {
   background-color: #ff385c;
 }
 #navbar3 > div > h4 {
-  margin-right: 40%;
+  margin-right: 0;
   color: white;
 }
 
@@ -391,14 +395,72 @@ div:nth-child(11) {
     margin: 0;
     padding: 0;
   }
+
+  #navbar2 {
+    display: none;
+  }
+
+  #navbar3 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+  }
+
+  #navbar3 > div > p,
+  h4 {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .hero-image {
+    width: 100%;
+    margin: 40px 0 10px 0;
+  }
+  .container {
+    position: absolute;
+    top: 60%;
+  }
+  .container2 {
+    position: absolute;
+    top: 72%;
+  }
+
+  #fourImages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+  #fourImages > div {
+    position: relative;
+  }
+  #fourImages > div > h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 34px;
+  }
+  #fourImages > div > p {
+    position: absolute;
+    font-size: 14px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 /* Mobile Devices CSS */
+@media screen and (max-width: 393px) {
+  .hamburgerIcon {
+    font-size: 14px;
+  }
 
-@media screen and (max-width: 361px) {
   #navbar1 {
     margin: 0;
-    padding: 0 7px;
+    padding: 0 10px;
   }
 
   #navbar1 > div:nth-child(1) {
@@ -432,7 +494,7 @@ div:nth-child(11) {
   .navbarIcons {
     gap: 16px;
   }
-  .navbarIcons > div:nth-child(1) {
+  #navbar3 {
     display: none;
   }
 }
