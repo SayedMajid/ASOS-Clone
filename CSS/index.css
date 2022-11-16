@@ -326,26 +326,22 @@ div:nth-child(11) {
   font-family: Arial, Helvetica, sans-serif;
   color: dimgray;
 }
-#footerBox > div > p {
+#footerBox > div > div > p {
   font-size: 14px;
   color: #999;
 }
-#footerBtn {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  padding: 0;
-  margin: 0;
-  height: 30px;
+
+#footerBox > div:nth-child(4) > div {
   display: flex;
+  margin-top: -14px;
   align-items: center;
-  align-content: center;
-  color: #999;
+  gap: 4px;
 }
-#footerBtn > img {
-  height: 20px;
-  width: 20px;
+#footerBox > div:nth-child(4) > div  img {
+  height: 24px;
+  margin-top: 2px;
 }
+
 
 /* Tablet to small screens */
 
@@ -419,6 +415,8 @@ div:nth-child(11) {
   .hero-image {
     width: 100%;
     margin: 40px 0 10px 0;
+    padding: 20px;
+    box-sizing: border-box;
   }
   .container {
     position: absolute;
@@ -431,8 +429,10 @@ div:nth-child(11) {
 
   #fourImages {
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
+    padding: 20px;
   }
   #fourImages > div {
     position: relative;
@@ -449,6 +449,77 @@ div:nth-child(11) {
     bottom: 0;
     left: 0;
     right: 0;
+  }
+
+  #twoImages {
+    width: 90%;
+  }
+
+  #twoImages > div > h1 {
+    font-size: 24px;
+  }
+  #twoImages > div > button {
+    font-size: 16px;
+  }
+
+  #trendingBrands {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #trendingBrands > div {
+    margin: 0;
+    padding: 0;
+    height: 160px;
+  }
+
+  #trendingBrands img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* sAndp, socials, payments */
+  #sAndp {
+    margin: 0;
+    padding: 0;
+    clip-path: none;
+  }
+
+  .socials {
+    justify-content: center !important;
+    gap: 50px;
+  }
+  .payments {
+    justify-content: center;
+    gap: 20px;
+  }
+  #footerBox {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #footerBox > div > h4 {
+    text-align: start !important;
+    margin: 0;
+    height: 30px;
+    margin-bottom: 24px;
+  }
+
+  #footerBox > div > div > p {
+    color: dimgray;
+    font-size: 14px;
+  }
+
+  #footerBox > div:nth-child(4) > div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: -16px;
+  }
+
+  #footerBox > div:nth-child(4) > div > span > img {
+    margin-top: 2px;
+    height: 22px;
   }
 }
 
